@@ -91,7 +91,7 @@ WhatsApp Business
 - Menu-driven user interaction
 - Modular n8n workflow
 
-- # 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 | Category | Technologies |
 |----------|--------------|
