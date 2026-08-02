@@ -142,3 +142,27 @@ Key benefits include:
 - Implemented multilingual support (English, Hindi, Marathi, and Hinglish).
 - Built context-aware conversations using AI Agent and conversation memory.
 - Automated customer interactions while preserving the existing WhatsApp Business experience.
+
+# 📂 Project Structure
+
+```text
+ai-whatsapp-assistant-chakrahq/
+│
+├── README.md
+├── workflow/
+│   └── ai-whatsapp-assistant.json
+├── screenshots/
+├── .env.example
+├── .gitignore
+└── LICENSE
+```
+
+# 🔑 Environment Variables
+
+The following environment variables are required to run the workflow:
+
+| Variable | Description |
+|----------|-------------|
+| OPENAI_API_KEY | OpenAI API Key |
+| CHAKRAHQ_API_KEY | ChakraHQ API Key |
+| WEBHOOK_URL | n8n Webhook URL |
