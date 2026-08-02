@@ -23,3 +23,83 @@ The workflow receives incoming WhatsApp messages through **ChakraHQ Webhooks**, 
 This architecture provides an intelligent customer support experience without requiring any additional dashboard for the business owner.
 
 ---
+
+---
+
+# 🏗️ System Architecture
+
+```text
+Customer
+     │
+     ▼
+WhatsApp Business
+     │
+     ▼
+ChakraHQ
+     │
+     ▼
+Webhook (n8n)
+     │
+     ▼
+Extract User Details
+     │
+     ▼
+AI Agent (OpenAI GPT)
+     │
+ ┌───┴────────────┐
+ │                │
+ ▼                ▼
+Prompt Logic   Conversation Memory
+ │                │
+ └──────┬─────────┘
+        ▼
+Generate Response
+        │
+        ▼
+HTTP Request
+        │
+        ▼
+ChakraHQ API
+        │
+        ▼
+WhatsApp Business
+```
+
+---
+
+# ⚙️ Workflow
+
+1. Customer sends a message using **WhatsApp Business**.
+2. **ChakraHQ** forwards the incoming message to an **n8n Webhook**.
+3. The workflow extracts the user's phone number, name, and message.
+4. The request is processed by an **AI Agent** powered by **OpenAI GPT**.
+5. Conversation history is maintained using **Memory** to provide context-aware responses.
+6. The AI-generated response is sent back to **ChakraHQ** using an **HTTP Request**.
+7. ChakraHQ delivers the response to the customer through **WhatsApp Business**.
+
+---
+# ✨ Features
+
+- AI-powered customer support
+- WhatsApp Business integration
+- ChakraHQ API integration
+- Webhook-based event processing
+- Prompt engineering
+- Conversation memory
+- Multi-language support (English, Hindi, Marathi & Hinglish)
+- Context-aware conversations
+- Menu-driven user interaction
+- Modular n8n workflow
+
+- # 🛠️ Tech Stack
+
+| Category | Technologies |
+|----------|--------------|
+| Workflow Automation | n8n |
+| AI Model | OpenAI GPT |
+| Messaging Platform | WhatsApp Business |
+| Integration Platform | ChakraHQ |
+| APIs | REST API, HTTP Request |
+| Trigger | Webhook |
+| Memory | Simple Memory |
+| AI Components | AI Agent |
