@@ -133,3 +133,12 @@ Key benefits include:
 4. Configure ChakraHQ API credentials.
 5. Update Webhook URL.
 6. Activate the workflow.
+
+
+# 📈 Project Highlights
+
+- Designed an end-to-end AI-powered WhatsApp automation workflow using n8n.
+- Integrated WhatsApp Business with ChakraHQ instead of the native WhatsApp node.
+- Implemented multilingual support (English, Hindi, Marathi, and Hinglish).
+- Built context-aware conversations using AI Agent and conversation memory.
+- Automated customer interactions while preserving the existing WhatsApp Business experience.
